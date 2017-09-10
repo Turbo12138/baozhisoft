@@ -1,0 +1,424 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>jQuery鼠标滚动全屏切换预览特效 - 站长素材</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="../static/css/demo.css" />
+<link rel="stylesheet" type="text/css" href="../static/css/reset.css" />
+<link rel="stylesheet" type="text/css" href="../static/css/bootstrap.min.css" />
+<link rel="stylesheet" type="text/css" href="../static/css/jquery.fullPage.css" />
+<link rel="stylesheet" type="text/css" href="../static/css/index.css" />
+</head>
+<body>
+
+
+<div id="fullpage">
+
+	<!--<div class="logo" id="logo">logo</div>-->
+
+	<!--固定导航-->
+	<!--<ul class="menu">-->
+		<!--<Li data-menuanchor="page1" class="active"><a href="#page1">第一页</a></Li>-->
+		<!--<Li data-menuanchor="page2"><a href="#page2">第二页</a></Li>-->
+		<!--<Li data-menuanchor="page3"><a href="#page3">第三页</a></Li>-->
+		<!--<Li data-menuanchor="page4"><a href="#page4">第四页</a></Li>-->
+	<!--</ul>-->
+
+	<!--第一个页面-->
+
+	<div class="section banner">
+        <div class="nav">
+            <div class="container f-cb">
+                <img src="../static/image/logo.png">
+                <ul class="nav-list f-cb">
+                    <li><a href="javascript:;" class="navA active">首页</a></li>
+                    <li>
+                        <a href="javascript:;" class="navA">产品中心</a>
+                        <ul class="child-nav f-cb disPlay">
+                            <li>
+								<a href="javascript:;">条码管理</a>
+								<p>条码管理</p>
+							</li>
+                            <li>
+								<a href="javascript:;">物料管理</a>
+								<p>物料管理</p>
+							</li>
+                            <li>
+								<a href="javascript:;">品质管理</a>
+								<p>品质管理</p>
+							</li>
+                            <li>
+								<a href="javascript:;">计划排程</a>
+								<p>计划排程</p>
+							</li>
+                            <li>
+								<a href="javascript:;">供应商管理</a>
+								<p>供应商管理</p>
+							</li>
+                            <li>
+								<a href="javascript:;">生产追溯管理</a>
+								<p>生产追溯管理</p>
+							</li>
+                            <li>
+								<a href="javascript:;">质量追溯管理</a>
+								<p>质量追溯管理</p>
+							</li>
+                            <li>
+								<a href="javascript:;">物流管理</a>
+								<p>物流管理</p>
+							</li>
+                            <li>
+								<a href="javascript:;">项目开发</a>
+								<p>项目开发</p>
+							</li>
+                            <li>
+								<a href="javascript:;">人力资源</a>
+								<p>人力资源</p>
+							</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="navA">解决方案</a>
+                        <ul class="child-nav f-cb disPlay">
+                            <li><a href="javascript:;">ERP 整体方案</a></li>
+                            <li><a href="javascript:;">计划优化方案</a></li>
+                            <li><a href="javascript:;">生产优化方案</a></li>
+                            <li><a href="javascript:;">流程优化方案</a></li>
+                            <li><a href="javascript:;">信息化优化方案</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="navA">新闻资讯</a>
+                        <ul class="child-nav1 f-cb disPlay">
+                            <li><a href="javascript:;">行业新闻</a></li>
+                            <li><a href="javascript:;">公司动态</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript:;" class="navA">关于</a>
+                        <ul class="child-nav2 f-cb disPlay">
+                            <li><a href="javascript:;">关于宝智</a></li>
+                            <li><a href="javascript:;">团队风采</a></li>
+                            <li><a href="javascript:;">荣誉资质</a></li>
+                            <li><a href="javascript:;">成功案例</a></li>
+                            <li><a href="javascript:;">联系我们</a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <ul class="awesome f-cb">
+                    <li>
+                        <a href="javascript:;"><i class="icon iconfont">&#xe644;</i></a>
+                        <div class="code disPlay">
+                            <img src="../static/image/blo.png">
+                        </div>
+                    </li>
+                    <li>
+                        <a href="javascript:;"><i class="icon iconfont">&#xe793;</i></a>
+                        <div class="code disPlay">
+                            <img src="../static/image/blo.png">
+                        </div>
+                    </li>
+                    <li><a href="javascript:;"><i class="icon iconfont">&#xe600;</i>  智订货</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="index-container">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner f-cb" role="listbox">
+                    <div class="item active">
+                        <img src="../static/image/banner1.jpg" style="width: 2150px;min-width: 1200px">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../static/image/banner2.jpg" style="width: 2150px;min-width: 1200px">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                    <div class="item">
+                        <img src="../static/image/banner3.jpg" style="width: 2150px;min-width: 1200px">
+                        <div class="carousel-caption">
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+	<!--第二个页面-->
+	<div class="section solve">
+		<div class="container">
+            <div class="solve-nav">
+                <a href="javascript:;" class="public product">产品项目</a>
+                <a href="javascript:;" class="public solve-way">解决方案</a>
+                <a href="javascript:;" class="public honor">荣誉资质</a>
+            </div>
+            <div class="pic-list f-cb">
+                <div class="average f-cb">
+                    <div class="average-lit spes bac-img">
+                        <p class="font1">ERP整体方案</p>
+                        <p class="font2">知识经济时代，企业的管理者面临种种的挑战，如何来帮助我么企业</p>
+                    </div>
+                    <div class="average-lit spe">
+                        <img src="../static/image/adv-1.png">
+                        <img class="img-po rock" src="../static/image/roc.png">
+                        <img class="img-po rock-l disPlay" src="../static/image/roc-le.png">
+                    </div>
+                    <div class="adv2">
+                        <img class="num-pos" src="../static/image/adv2.png">
+                        <img class="img-po-le rock2" src="../static/image/roc-rdep.png">
+                        <img class="img-po-le rock-2 disPlay" src="../static/image/roc-r.png">
+                    </div>
+                </div>
+                <div class="average f-cb">
+                    <div class="average-lit-le">
+                        <div class="adv-top bac-img2">
+                            <p class="font1">ERP整体方案</p>
+                            <p class="font2">知识经济时代，企业的管理者面临种种的挑战，如何来帮助我么企业</p>
+                        </div>
+                        <div class="adv-top bac-img3">
+                            <p class="font1">ERP整体方案</p>
+                            <p class="font2">知识经济时代，企业的管理者面临种种的挑战，如何来帮助我么企业</p>
+                        </div>
+                    </div>
+                    <div class="adv3">
+                        <img src="../static/image/adv3.png">
+                        <img class="img-po-ri rock3" src="../static/image/roc.png">
+                        <img class="img-po-ri rock-3 disPlay" src="../static/image/roc-le.png">
+                    </div>
+                </div>
+            </div>
+            <a href="javascript:;" class="more">MORE</a>
+        </div>
+	</div>
+	<!--第三个页面-->
+	
+	<div class="section about">
+        <div class="container f-cb">
+            <h1 class="abo-mar">关于我们</h1>
+            <h3>ABOUT US</h3>
+            <ul class="lit-nav">
+                <li><a href="javascript:;" class="active" data-id="1">关于</a></li>
+                <li><a href="javascript:;" data-id="2">文化</a></li>
+                <li><a href="javascript:;" data-id="3">新闻</a></li>
+            </ul>
+            <div class="detail f-cb" data-id="1">
+                <div class="news">
+                    <h4>行业新闻</h4>
+                    <ul>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                    </ul>
+                </div>
+                <div class="dynamic">
+                    <h4>公司动态</h4>
+                    <ul>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detail f-cb disPlay" data-id="2">
+                <div class="news">
+                    <h4>行业新闻</h4>
+                    <ul>
+                        <li><a href="javascript:;">easy？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                    </ul>
+                </div>
+                <div class="dynamic">
+                    <h4>公司动态</h4>
+                    <ul>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="detail f-cb disPlay" data-id="3">
+                <div class="news">
+                    <h4>行业新闻</h4>
+                    <ul>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何easy性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                    </ul>
+                </div>
+                <div class="dynamic">
+                    <h4>公司动态</h4>
+                    <ul>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                        <li><a href="javascript:;">如何辨别ERP的稳定性？</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="bot">
+            <ul class="f-cb">
+                <li><span class="big">163</span><span class="mar-left">上市/企业集团设计作品</span></li>
+                <li><span class="big">163</span><span class="mar-left">上市/企业集团设计作品</span></li>
+                <li><span class="big">163</span><span class="mar-left">上市/企业集团设计作品</span></li>
+                <li><span class="big">163</span><span class="mar-left">上市/企业集团设计作品</span></li>
+            </ul>
+        </div>
+    </div>
+	<!--第四个页面-->
+	<div class="section con-foot">
+        <div class="container f-cb">
+            <h1 class="abo">案例展示</h1>
+            <h3>ABOUT US</h3>
+            <ul class="comp-lis f-cb">
+                <li><img src="../static/image/boc.png"></li>
+                <li><img src="../static/image/comp.png"></li>
+                <li><img src="../static/image/boc.png"></li>
+                <li><img src="../static/image/comp.png"></li>
+                <li><img src="../static/image/boc.png"></li>
+                <li><img src="../static/image/comp.png"></li>
+                <li><img src="../static/image/boc.png"></li>
+                <li><img src="../static/image/comp.png"></li>
+            </ul>
+        </div>
+    </div>
+    <div class="section con-foot con-foots">
+        <div class="footer-con">
+            <div class="main">
+                <ul class="f-cb">
+                    <li class="bor-ri">
+                        <div class="phone">
+                            <h2>HOTLINE</h2>
+                            <h2>全国服务热线</h2>
+                            <h1>400-888-8888</h1>
+                            <div class="phone-cer f-cb">
+                                <a class="cer"><i class="icon iconfont">&#xe793;</i></a>
+                                <a class="cer"><i class="icon iconfont">&#xe644;</i></a>
+                                <a class="cer"><i class="icon iconfont">&#xe619;</i></a>
+                            </div>
+                            <a href="#" class="kefu">联系在线客服</a>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="phone">
+                            <h2>LEARN MORE</h2>
+                            <h2>了解更多</h2>
+                            <p class="mar-top"><span>订货系统</span><span class="mar-le">现场诊断</span></p>
+                            <p class="p"><span>订货系统</span><span class="mar-le">现场诊断</span></p>
+                            <p class="p"><span>订货系统</span><span class="mar-le">现场诊断</span></p>
+                        </div>
+                    </li>
+                    <li class="bor-le" style="height: 265px;">
+                        <div class="contact">
+                            <h2>CONTACT US</h2>
+                            <h2>联系我们</h2>
+                            <p class="email mar-top">bzsoft@baozhisoft.com</p>
+                            <p class="qq">7852061755</p>
+                            <p class="www">www.baozhisoft.com</p>
+                            <p class="dress">石家庄市长安区丰收路奥北公元</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="register">
+                <p>COPYRIGHT©2006-2016 石家庄宝智科技软件有限公司 冀ICP备15027423号-1</p>
+            </div>
+        </div>
+    </div>
+
+</div>
+
+<script type="text/javascript" src="../static/js/jquery-1.9.1.min.js"></script>
+<script type="text/javascript" src="../static/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="../static/js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="../static/js/index.js"></script>
+<script type="text/javascript">
+$(document).ready(function() {
+
+	$('#fullpage').fullpage({
+		
+		sectionsColor:['#fff','#fff','#fff','#fff','#fff'], //控制每个section的背景颜色
+		
+		controlArrow:true,   //是否隐藏左右滑块的箭头(默认为true)
+		
+		verticalCentered: true,  //内容是否垂直居中(默认为true)
+		 
+		css3: true, //是否使用 CSS3 transforms 滚动(默认为false)
+		 
+		resize:false, //字体是否随着窗口缩放而缩放(默认为false)
+		
+		scrolllingSpeed:1000,  //滚动速度，单位为毫秒(默认为700)
+		
+		anchors:['page1','page2','page3','page4'],  //定义锚链接(值不能和页面中任意的id或name相同，尤其是在ie下，定义时不需要加#)
+
+		lockAnchors:false,  //是否锁定锚链接，默认为false。设置weitrue时，锚链接anchors属性也没有效果。
+		
+		loopBottom:false,  //滚动到最底部后是否滚回顶部(默认为false)
+		
+		loopTop:false, //滚动到最顶部后是否滚底部
+		
+		loopHorizontal:false,//左右滑块是否循环滑动
+		
+		autoScrolling:true, // 是否使用插件的滚动方式，如果选择 false，则会出现浏览器自带的滚动条
+		
+		scrollBar:false,//是否显示滚动条，为true是一滚动就是一整屏
+		
+		fixedElements:".logo", //固定元素
+		
+		menu:".menu",
+		
+		keyboardScrolling:true, //是否使用键盘方向键导航(默认为true)
+		
+		keyboardScrolling:true, //页面是否循环滚动（默认为false）
+		
+		navigation:true, //是否显示项目导航（默认为false）
+		
+		navigationTooltips:["page1","page2","page3","page4"],//项目导航的 tip
+		
+		navigationColor:'#fff', //项目导航的颜色
+		
+		slidesNavigation:true
+		
+	});
+
+});
+</script>
+
+</body>
+</html>
